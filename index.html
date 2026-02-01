@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix-Me | טכנאי מוצרי חשמל מוסמך</title>
+    <link rel="icon" type="image/png" href="images/fix-me_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-container">
+                <img src="images/fix-me_logo.png" alt="לוגו Fix-Me" class="logo-image">
+            </div>
+
+            <nav class="site-navigation">
+                <a href="#home" class="nav-link">בית</a>
+                <a href="#stats" class="nav-link">ניסיון</a>
+                <a href="#reviews" class="nav-link">המלצות</a>
+                <a href="#benefits" class="nav-link">למה אנחנו</a>
+            </nav>
+
+            <div class="header-actions">
+                <button onclick="toggleDarkMode()" class="theme-toggle" title="מצב לילה">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+
+                <a href="tel:0546788789" class="phone-link">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>054-678-8789</span>
+                </a>
+
+                <a href="https://wa.me/972546788789" target="_blank" class="whatsapp-link" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        אהרון יסמעילוב<br>
+                        <span class="hero-highlight">הטכנאי שלך למוצרי חשמל ביתיים</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        טכנאי בכיר, שירות מהיר ואמין למגוון מוצרי חשמל ביתיים: מקררים, מקפיאים, מכונות כביסה, מייבשי
+                        כביסה,
+                        תנורים. עם שנות ניסיון רבות, אנחנו מחזירים לכם את השקט
+                        הביתה.
+                    </p>
+                    <div>
+                        <a href="https://wa.me/972546788789" target="_blank" class="hero-cta">
+                            <i class="fab fa-whatsapp"></i>
+                            הזמן טכנאי עכשיו
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="images/fix-me_subj_image.png" alt="תמונת אווירה של מוצרי חשמל" class="hero-image">
+            </div>
+
+
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div>
+                        <div class="stat-number">
+                            <span class="counter-num" data-target="19">0</span>
+                            <span class="counter-plus">+</span>
+                        </div>
+                        <p class="stat-label">שנות ניסיון</p>
+                    </div>
+                    <div>
+                        <div class="stat-number">
+                            <span class="counter-num" data-target="9.9" data-decimal="true">0</span>
+                            <span class="text-primary">/10</span>
+                        </div>
+                        <p class="stat-label">דירוג ממוצע</p>
+                    </div>
+                    <div>
+                        <div class="stat-number">
+                            <span class="counter-num" data-target="825">0</span>
+                            <span class="counter-plus">+</span>
+                        </div>
+                        <p class="stat-label">חוות דעת</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="reviews" class="testimonials-section">
+            <div class="container">
+                <div class="testimonials-layout">
+                    <!-- Profile Image -->
+                    <div class="profile-section">
+                        <div class="profile-image-wrapper">
+                            <img src="images/haron_profile.jpeg" alt="תמונת פרופיל של אהרון יסמעילוב"
+                                class="profile-image">
+                        </div>
+                        <div class="rating-badge">
+                            <span class="rating-number">9.9</span>
+                            <div class="rating-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel -->
+                    <div class="testimonials-content">
+                        <div>
+                            <h2 class="testimonials-title">מה לקוחות אומרים?</h2>
+                        </div>
+                        <div class="carousel-container">
+                            <div class="carousel-track" id="carouselTrack">
+                                <!-- Testimonial cards -->
+                                <div class="testimonial-card">
+                                    <span class="quote-icon">"</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">שירות פשוט יוצא מן
+                                        הכלל. הגיע בדיוק בזמן, תיקן במחיר הוגן מאוד.</p>
+                                    <div>
+                                        <div class="reviewer-name">ישראל ישראלי</div>
+                                        <div class="reviewer-location">תל אביב</div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <span class="quote-icon">"</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">מקצוען אמיתי! פתר לי
+                                        בעיה שאף אחד אחר לא הצליח. ממליצה בחום!</p>
+                                    <div>
+                                        <div class="reviewer-name">שרה כהן</div>
+                                        <div class="reviewer-location">ירושלים</div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <span class="quote-icon">"</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">שירות מהיר ואמין.
+                                        תיקן את המזגן שלי תוך שעה. מומלץ ביותר!</p>
+                                    <div>
+                                        <div class="reviewer-name">דוד לוי</div>
+                                        <div class="reviewer-location">חיפה</div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <span class="quote-icon">"</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">אחלה טכנאי! מחירים
+                                        הוגנים ועבודה מצוינת. בהחלט אחזור אליו.</p>
+                                    <div>
+                                        <div class="reviewer-name">מיכל אברהם</div>
+                                        <div class="reviewer-location">באר שבע</div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <span class="quote-icon">"</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">תודה על השירות
+                                        המעולה! זריז, מקצועי ובמחיר נוח.</p>
+                                    <div>
+                                        <div class="reviewer-name">יוסי מזרחי</div>
+                                        <div class="reviewer-location">נתניה</div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <span class="quote-icon">"</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">הטכנאי הכי טוב
+                                        שפגשתי! עבודה נקייה ומקצועית ברמה הכי גבוהה.</p>
+                                    <div>
+                                        <div class="reviewer-name">רונית גולן</div>
+                                        <div class="reviewer-location">רעננה</div>
+                                    </div>
+                                </div>
+
+                                <!-- Duplicate for infinite scroll -->
+                                <div class="testimonial-card">
+                                    <span class="quote-icon">"</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">שירות פשוט יוצא מן
+                                        הכלל. הגיע בדיוק בזמן, תיקן במחיר הוגן מאוד.</p>
+                                    <div>
+                                        <div class="reviewer-name">ישראל ישראלי</div>
+                                        <div class="reviewer-location">תל אביב</div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <span class="quote-icon">"</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">מקצוען אמיתי! פתר לי
+                                        בעיה שאף אחד אחר לא הצליח. ממליצה בחום!</p>
+                                    <div>
+                                        <div class="reviewer-name">שרה כהן</div>
+                                        <div class="reviewer-location">ירושלים</div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <span class="quote-icon">"</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">שירות מהיר ואמין.
+                                        תיקן את המזגן שלי תוך שעה. מומלץ ביותר!</p>
+                                    <div>
+                                        <div class="reviewer-name">דוד לוי</div>
+                                        <div class="reviewer-location">חיפה</div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <span class="quote-icon">"</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">אחלה טכנאי! מחירים
+                                        הוגנים ועבודה מצוינת. בהחלט אחזור אליו.</p>
+                                    <div>
+                                        <div class="reviewer-name">מיכל אברהם</div>
+                                        <div class="reviewer-location">באר שבע</div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <span class="quote-icon">"</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">תודה על השירות
+                                        המעולה! זריז, מקצועי ובמחיר נוח.</p>
+                                    <div>
+                                        <div class="reviewer-name">יוסי מזרחי</div>
+                                        <div class="reviewer-location">נתניה</div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <span class="quote-icon">"</span>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                            class="fas fa-star"></i>
+                                    </div>
+                                    <p class="review-text">הטכנאי הכי טוב
+                                        שפגשתי! עבודה נקייה ומקצועית ברמה הכי גבוהה.</p>
+                                    <div>
+                                        <div class="reviewer-name">רונית גולן</div>
+                                        <div class="reviewer-location">רעננה</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="benefits-section">
+            <div class="container">
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon-box"><i class="fas fa-bolt"></i></div>
+                        <h3 class="benefit-title">זמינות</h3>
+                        <p class="benefit-description">הגעה מהירה במיוחד לכל קריאה.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon-box"><i class="fas fa-user-check"></i></div>
+                        <h3 class="benefit-title">טכנאי מוסמך</h3>
+                        <p class="benefit-description">ניסיון של שנים בשטח.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon-box"><i class="fas fa-medal"></i></div>
+                        <h3 class="benefit-title">מקצוענות</h3>
+                        <p class="benefit-description">שימוש בחלפים מקוריים בלבד.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon-box"><i class="fas fa-eye"></i></div>
+                        <h3 class="benefit-title">שקיפות</h3>
+                        <p class="benefit-description">מחיר ידוע מראש, ללא הפתעות.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="fix-me_logo.png" alt="לוגו" class="footer-logo">
+                    <p class="footer-description">Fix-Me - המקצוענים בתיקון מוצרי חשמל. מעל 19 שנות ניסיון.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">מדיניות ותנאי שימוש</a>
+                    <a href="#" class="footer-link">הצהרת נגישות</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> | עיצוב ובניה: רונן דוד | Fix-Me כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- קישור לקובץ ה-JS החיצוני -->
+    <script src="script.js"></script>
+</body>
+
+</html>

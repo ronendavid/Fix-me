@@ -2,9 +2,9 @@
  * ניהול מצב לילה (Dark Mode)
  */
 function toggleDarkMode() {
-    document.documentElement.classList.toggle('dark');
+    document.body.classList.toggle('dark');
     const icon = document.getElementById('theme-icon');
-    if (document.documentElement.classList.contains('dark')) {
+    if (document.body.classList.contains('dark')) {
         icon.className = 'fas fa-sun';
     } else {
         icon.className = 'fas fa-moon';
@@ -56,6 +56,12 @@ const observer = new IntersectionObserver((entries) => {
  * הפעלה ראשונית
  */
 window.addEventListener('DOMContentLoaded', () => {
+    // Dark Mode Toggle Listener
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    if (themeBtn) {
+        themeBtn.addEventListener('click', toggleDarkMode);
+    }
+
     // אתחול המונים
     const counters = document.querySelectorAll('.counter-num');
     counters.forEach(c => observer.observe(c));

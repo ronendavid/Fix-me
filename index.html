@@ -16,7 +16,14 @@
         rel="stylesheet">
 
     <link rel="icon" type="image/png" href="images/fix-me_icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Defer Font Awesome to reduce unused CSS leverage -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+
     <link rel="stylesheet" href="style.css">
 </head>
 

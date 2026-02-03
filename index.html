@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self' 'sha256-5jjp4Zjx8iH9jRa1qS6yWj9Xj6sHkC6s2/A+2c3t+A8='; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:;">
+        content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Fix-Me - שירותי תיקון מוצרי חשמל ביתיים על ידי אהרון יסמעילוב. טכנאי מוסמך למקררים, מכונות כביסה, מייבשים ותנורים. שירות מהיר ואמין.">
@@ -22,12 +22,8 @@
 
     <link rel="icon" type="image/png" href="images/fix-me_icon.png">
 
-    <!-- Defer Font Awesome to reduce unused CSS leverage -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    </noscript>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,7 +34,8 @@
     <header class="site-header">
         <div class="container header-container">
             <div class="logo-container">
-                <img src="images/fix-me_logo.png" alt="לוגו Fix-Me" class="logo-image" width="180" height="56">
+                <img src="images/fix-me_logo_optimized.png" alt="לוגו Fix-Me" class="logo-image" width="180"
+                    height="56">
             </div>
 
             <nav class="site-navigation">
@@ -90,8 +87,8 @@
                 </div>
             </div>
             <div>
-                <img src="images/fix-me_subj_image.jpg" alt="תמונת אווירה של מוצרי חשמל" class="hero-image" width="800"
-                    height="600">
+                <img src="images/fix-me_subj_image.jpg" fetchpriority="high" alt="תמונת אווירה של מוצרי חשמל"
+                    class="hero-image" width="800" height="600">
             </div>
 
 
@@ -164,7 +161,7 @@
                     <!-- Profile Image -->
                     <div class="profile-section">
                         <div class="profile-image-wrapper">
-                            <img src="images/haron_profile.jpeg" alt="תמונת פרופיל של אהרון יסמעילוב"
+                            <img src="images/haron_profile.jpeg" loading="lazy" alt="תמונת פרופיל של אהרון יסמעילוב"
                                 class="profile-image" width="380" height="460">
                         </div>
                         <div class="rating-badge">

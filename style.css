@@ -597,6 +597,74 @@ body>* {
     color: #6b7280;
 }
 
+/* Tips Section */
+.tips-section {
+    padding: 6rem 0;
+    background-color: var(--bg-light);
+}
+
+.dark .tips-section {
+    background-color: var(--bg-dark);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--blue-dark);
+}
+
+.dark .section-title {
+    color: var(--text-light);
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.tip-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-xl);
+    border: 1px solid var(--border-light);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.dark .tip-card {
+    background-color: var(--bg-gray-800);
+    border-color: var(--border-dark);
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+.tip-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.tip-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.tip-description {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+.dark .tip-description {
+    color: #9ca3af;
+}
+
 /* --- Media Queries --- */
 
 /* Mobile & Small Screens */

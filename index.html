@@ -4,10 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data:;">
+        content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://fix-me.co.il; connect-src 'self' https://www.google-analytics.com;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Fix-Me - שירותי תיקון מוצרי חשמל ביתיים על ידי אהרון יסמעילוב. טכנאי מוסמך למקררים, מכונות כביסה, מייבשים ותנורים. שירות מהיר ואמין.">
+
+    <!-- SEO & Search Engine Optimization -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="keywords"
+        content="טכנאי מוצרי חשמל, תיקון מקררים, תיקון מכונות כביסה, טכנאי מוסמך, אהרון יסמעילוב, Fix-Me, תיקון תנורים, בקעת אונו, גבעת שמואל, פתח תקווה, יהוד, אור יהודה, סביון, שוהם, גני תקווה">
+    <meta name="author" content="אהרון יסמעילוב - Fix-Me">
+    <link rel="canonical" href="https://fix-me.co.il/"> <!-- יש להחליף בכתובת האתר הסופית -->
+
+    <!-- Open Graph / Facebook / WhatsApp (Meta for Social & AI) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fix-me.co.il/">
+    <meta property="og:title" content="Fix-Me | טכנאי מוצרי חשמל מוסמך - אהרון יסמעילוב">
+    <meta property="og:description"
+        content="שירות תיקונים מקצועי למקררים, מכונות כביסה, מייבשים ותנורים. זמינות גבוהה, אמינות ומחירים הוגנים. חייגו עכשיו!">
+    <meta property="og:image" content="https://fix-me.co.il/images/fix-me_subj_image.png">
+    <meta property="og:locale" content="he_IL">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fix-Me | טכנאי מוצרי חשמל מוסמך">
+    <meta name="twitter:description"
+        content="נתקעתם עם מכונת כביסה מקולקלת? המקרר לא מקרר? אהרון יסמעילוב לשירותכם. תיקון מקצועי לכל מוצרי החשמל הביתיים.">
+    <meta name="twitter:image" content="https://fix-me.co.il/images/fix-me_subj_image.png">
+
+    <!-- - Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WHZ5XZW8');</script>
+
+    <!-- Schema.org Structured Data (AI & Rich Results) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Fix-Me - אהרון יסמעילוב",
+      "image": "https://fix-me.co.il/images/fix-me_logo_optimized.png",
+      "description": "שירותי תיקון מוצרי חשמל ביתיים על ידי טכנאי מוסמך. מתמחים במקררים, מכונות כביסה, מייבשים ותנורים.",
+      "telephone": "+972-54-678-8789",
+      "url": "https://fix-me.co.il",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ganei Tikva", 
+        "addressRegion": "Center",
+        "addressCountry": "IL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 32.0624,
+        "longitude": 34.8703
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "08:00",
+          "closes": "14:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/fixme",
+        "https://www.instagram.com/fixme"
+      ]
+    }
+    </script>
+
     <title>Fix-Me | טכנאי מוצרי חשמל מוסמך</title>
 
     <!-- Security: Frame Buster -->
@@ -29,6 +108,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHZ5XZW8" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Header Section -->
     <header class="site-header">

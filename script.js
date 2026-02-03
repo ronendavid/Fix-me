@@ -65,4 +65,23 @@ window.addEventListener('DOMContentLoaded', () => {
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
+
+    // אתחול קרוסלה אינסופית
+    initInfiniteCarousel();
 });
+
+/**
+ * פונקציה לשכפול כרטיסי המלצות ליצירת גלילה אינסופית ללא רווחים
+ */
+function initInfiniteCarousel() {
+    const track = document.getElementById('carouselTrack');
+    if (!track) return;
+
+    // משכפלים את הכרטיסים הקיימים פעם אחת
+    const cards = Array.from(track.children);
+    cards.forEach(card => {
+        const clone = card.cloneNode(true);
+        track.appendChild(clone);
+    });
+}
+

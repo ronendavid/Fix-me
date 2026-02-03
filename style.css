@@ -599,8 +599,51 @@ body>* {
 
 /* Tips Section */
 .tips-section {
-    padding: 6rem 0;
+    padding: 0 0 6rem 0;
     background-color: var(--bg-light);
+}
+
+.tips-banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1920&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.tips-banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(30, 64, 175, 0.8) 0%, rgba(249, 115, 22, 0.6) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tips-banner-title {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .tips-banner {
+        height: 200px;
+        background-attachment: scroll;
+    }
+    .tips-banner-title {
+        font-size: 2rem;
+    }
 }
 
 .dark .tips-section {

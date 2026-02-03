@@ -49,7 +49,6 @@ body>* {
 
 .container {
     max-width: 1920px;
-    /* margin: 0 auto; */
     margin-right: 2.5rem;
     padding: 0 2.5rem;
 }
@@ -102,6 +101,18 @@ body>* {
     }
 }
 
+@media (width < 645px) {
+    .header-container {
+        flex-direction: column;
+    }
+}
+
+@media (width < 1035px) {
+    .site-navigation {
+        display: none;
+    }
+}
+
 @media (min-width: 1024px) {
     .site-navigation {
         font-size: 1.2rem;
@@ -121,28 +132,47 @@ body>* {
 .header-actions {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
+}
+
+@media (width < 1035px) {
+    .site-navigation {
+        display: none;
+    }
 }
 
 .theme-toggle {
     padding: 0.5rem;
-    border-radius: 9999px;
-    background-color: var(--bg-gray-50);
-    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: solid 1px var(--primary-color);
     cursor: pointer;
     transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (width < 370px) {
+    .theme-toggle {
+        display: none;
+    }
 }
 
 .theme-toggle:hover {
-    background-color: #ffedd5;
+    background-color: var(--primary-color);
 }
 
 .dark .theme-toggle {
     background-color: var(--bg-gray-800);
 }
 
+.fa-moon {
+    font-size: 1.25rem;
+}
+
 .phone-link {
-    display: none;
     align-items: center;
     gap: 0.5rem;
     font-weight: 700;
@@ -154,6 +184,13 @@ body>* {
 
 .phone-link i {
     color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+@media (width < 1035px) {
+    .phone-link i {
+        /* font-size: 1.5rem; */
+    }
 }
 
 @media (min-width: 640px) {
@@ -172,13 +209,19 @@ body>* {
 
 .whatsapp-link {
     color: #22c55e;
-    font-size: 1.875rem;
+    font-size: 2.25rem;
     transition: transform 0.3s;
     text-decoration: none;
 }
 
 .whatsapp-link:hover {
     transform: scale(1.1);
+}
+
+@media (width < 310px) {
+    .whatsapp-link {
+        display: none;
+    }
 }
 
 /* Hero Section */
@@ -282,6 +325,26 @@ body>* {
     }
 }
 
+@media (width < 540px) {
+    .cta-btn {
+        text-align: center;
+    }
+
+    .hero-image {
+        margin: 0 auto 0;
+    }
+}
+
+@media (width < 370px) {
+    .hero-title {
+        font-size: 2.75rem;
+    }
+
+    .hero-image {
+        margin: 0 auto 0;
+    }
+}
+
 /* Stats Section */
 .stats-section {
     padding-bottom: 1rem;
@@ -306,6 +369,12 @@ body>* {
 @media (min-width: 768px) {
     .stats-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (width < 768px) {
+    .stats-grid {
+        gap: 1rem;
     }
 }
 
@@ -422,6 +491,26 @@ body>* {
     gap: 0.125rem;
     color: #facc15;
     font-size: 0.6rem;
+}
+
+@media (width < 350px) {
+    .profile-image-wrapper {
+        width: 220px;
+        height: 280px;
+    }
+
+    .rating-badge {
+        width: 45px;
+        height: 45px;
+    }
+
+    .rating-number {
+        font-size: 1.25rem;
+    }
+
+    .rating-stars {
+        font-size: 0.2rem;
+    }
 }
 
 .testimonials-content {
@@ -713,12 +802,49 @@ body>* {
 @media (width < 768px) {
     .testimonial-card {
         width: 220px;
+        padding: 0.75rem;
     }
 
     .container {
         margin-right: 1rem;
         margin-left: 1rem;
         padding: 0;
+    }
+}
+
+@media (width < 350px) {
+    .carousel-container {
+        padding: 20px 0;
+    }
+
+    .testimonial-card {
+        width: 180px;
+    }
+
+    .quote-icon {
+        left: 0.5rem;
+        top: 0.5rem;
+    }
+
+    .review-text {
+        margin-bottom: 0.75rem;
+    }
+
+    .reviewer-name {
+        font-size: 1rem;
+    }
+
+    .testimonials-section {
+        padding: 1.5rem 0;
+    }
+
+    .testimonials-content {
+        margin-top: 1.5rem;
+    }
+
+    .testimonials-title {
+        font-size: 2rem;
+        margin-bottom: 0rem;
     }
 }
 
@@ -794,5 +920,9 @@ body>* {
 @media (width < 768px) {
     .footer-grid {
         gap: 1rem;
+    }
+
+    .footer-links {
+        justify-content: center;
     }
 }

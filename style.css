@@ -408,8 +408,8 @@ body>* {
     }
 
     to {
-        /* גלילה לצד שמאל (סוף השורה ב-RTL) */
-        transform: translateX(calc(-50% - 0.625rem));
+        /* גלילה בדיוק למחצית ה-Track (החלק המקורי) */
+        transform: translateX(50%);
     }
 }
 
